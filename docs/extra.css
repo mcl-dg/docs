@@ -1,7 +1,19 @@
+/* =========================================================
+   THÈME CLAIR (Mode "default")
+   ========================================================= */
+[data-md-color-scheme="default"] {
+  /* Un gris très très clair et doux pour le fond principal */
+  --md-default-bg-color: #f8f9fa; 
+  /* Un blanc pur pour faire ressortir les blocs de code et la barre de recherche */
+  --md-default-bg-color--light: #ffffff; 
+}
+
+/* =========================================================
+   THÈME SOMBRE (Mode "slate")
+   ========================================================= */
 [data-md-color-scheme="slate"] {
-  /* Change la couleur de fond principale */
-  --md-default-bg: #121212;
-  
-  /* Optionnel : Ajuste la couleur "surface" (cartes, barres latérales) pour qu'elle s'accorde */
-  --md-default-bg-color: #1e1e1e;
+  /* Un bleu nuit/gris anthracite très profond et moderne */
+  --md-default-bg-color: #0f172a; 
+  /* Une nuance légèrement plus claire pour les blocs et encadrés */
+  --md-default-bg-color--light: #1e293b; 
 }
