@@ -1,0 +1,71 @@
+site_name: Michel Dong
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.top
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+  language: en
+  dark_mode: true  # Activer le mode sombre par défaut
+  logo: https://mcl.pages.dev/images/favicon.png
+  favicon: https://mcl.pages.dev/images/favicon.png
+
+  palette: 
+
+    # Palette toggle for light mode
+    
+    - scheme: slate
+      primary: black
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to light mode
+
+    # Palette toggle for dark mode
+    - scheme: default
+      primary: white
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+
+
+nav:
+  - Accueil: index.md
+  - L1: l1.md
+  - L2: l2.md
+  - À propos: https://mdong.up8.site/
+
+extra_css:
+  - extra.css
+
+markdown_extensions:
+  - admonition            # pour les blocs !!! info, warning, etc.
+  - codehilite            # coloration syntaxique
+  - toc:
+      permalink: false     # table des matières avec liens
+  - pymdownx.superfences  # améliore les blocs de code imbriqués
+  - pymdownx.details      # permet les blocs repliables
+  - pymdownx.emoji
+  - pymdownx.arithmatex:  # support LaTeX (via MathJax)
+      generic: true
+  - pymdownx.mark         # surlignage
+  - pymdownx.tasklist:    # listes de tâches
+      custom_checkbox: true
+  - pymdownx.inlinehilite # code en ligne avec coloration
+  - pymdownx.magiclink    # détection automatique des liens
+  - attr_list
+  - md_in_html
+  - pymdownx.extra
+  - pymdownx.tilde
+
+extra_javascript:
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+
+plugins:
+  - search
+
+# Répertoire contenant les fichiers markdown
+docs_dir: docs

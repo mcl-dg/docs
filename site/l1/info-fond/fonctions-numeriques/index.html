@@ -1,0 +1,1036 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="https://mcl.pages.dev/images/favicon.png">
+      <meta name="generator" content="zensical-0.0.27">
+    
+    
+      
+        <title>Fonctions numeriques - Michel Dong</title>
+      
+    
+    
+      
+        
+      
+      <link rel="stylesheet" href="../../../assets/stylesheets/modern/main.50057488.min.css">
+      
+        
+          
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/modern/palette.dfe2e883.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,500,500i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,a=__md_scope)=>JSON.parse(t.getItem(a.pathname+"."+e)),__md_set=(e,t,a=localStorage,_=__md_scope)=>{try{a.setItem(_.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer" aria-label="Navigation"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#applique-aux-fonctions" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Michel Dong" class="md-header__button md-logo" aria-label="Michel Dong" data-md-component="logo">
+      
+  <img src="https://mcl.pages.dev/images/favicon.png" alt="Michel Dong">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer" aria-label="Navigation">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-menu" viewBox="0 0 24 24"><path d="M4 5h16M4 12h16M4 19h16"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Michel Dong
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Fonctions numeriques
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="none" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="none" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search" aria-label="Search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-search" viewBox="0 0 24 24"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog" aria-label="Search">
+  <button type="button" class="md-search__button">
+    Search
+  </button>
+</div>
+      
+    
+    <div class="md-header__source">
+      
+    </div>
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  Accueil
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../" class="md-tabs__link">
+        
+  
+  L1
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../l2/" class="md-tabs__link">
+        
+  
+  L2
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="https://mdong.up8.site/" class="md-tabs__link">
+        
+  
+  À propos
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Michel Dong" class="md-nav__button md-logo" aria-label="Michel Dong" data-md-component="logo">
+      
+  <img src="https://mcl.pages.dev/images/favicon.png" alt="Michel Dong">
+
+    </a>
+    Michel Dong
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Accueil
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    L1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../l2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    L2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://mdong.up8.site/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    À propos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#applique-aux-fonctions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Appliqué aux fonctions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Appliqué aux fonctions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exemple" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exemple
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#formules-de-derivees" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Formules de dérivées
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemple-1-formule-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exemple 1 : Formule 1
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TP
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="TP">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#utilite-de-la-derivee" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Utilité de la dérivée
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemple-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exemple 2
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Exemple 2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#petite-parenthese" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Petite parenthèse
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Petite parenthèse">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exemple_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exemple
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fortran" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FORTRAN
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fonction-derivee-derivee-seconde" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fonction / dérivée / dérivée seconde
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fonction &#x2f; dérivée &#x2f; dérivée seconde">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exemple-probleme-a-3-corps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exemple : "Problème à 3 corps"
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dessiner-une-courbe-a-partir-dune-fonction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dessiner une courbe à partir d'une fonction
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fonction-exponentielle-et-logarithmique" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fonction exponentielle et logarithmique
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fonction exponentielle et logarithmique">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#proprietes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Propriétés
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercice-sur-la-derivation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercice sur la dérivation
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  <h1 id="__skip">Fonctions numeriques</h1>
+
+<h3 id="applique-aux-fonctions">Appliqué aux fonctions</h3>
+<p>extension à <span class="arithmatex">\(\mathbb{R}\)</span></p>
+<ul>
+<li><span class="arithmatex">\(f : \mathbb{R} \rightarrow \mathbb{R}\)</span></li>
+<li><span class="arithmatex">\(x \rightarrow f(x)\)</span></li>
+<li><span class="arithmatex">\(f(x) = x^2 - 5x + 6\)</span></li>
+<li><span class="arithmatex">\(f'(x) = 2x -5\)</span></li>
+<li><span class="arithmatex">\(f''(x) = 2\)</span></li>
+</ul>
+<p><img alt="" src="https://pads.up8.edu/uploads/cc69d845-1c82-4244-a579-e1d2b515aa00.png" /></p>
+<h5 id="exemple">Exemple</h5>
+<p>Si on connait <span class="arithmatex">\(f(0)\)</span>, on calcule le terme suivant avec la différence.</p>
+<p><span class="arithmatex">\(diff(f(0.01),f(0)) \iff croissance \iff vitesse \iff \frac{f(x + \epsilon) - f(x)}{\epsilon}\)</span></p>
+<p>"vitesse" <span class="arithmatex">\(\lim\limits_{\epsilon \rightarrow 0} \frac{f(x + \epsilon) - f(x)}{\epsilon} = f'(x)\)</span></p>
+<p>"accélération" <span class="arithmatex">\(\lim\limits_{\epsilon \rightarrow 0} \frac{f'(x + \epsilon) - f'(x)}{\epsilon} = f''(x)\)</span></p>
+<h3 id="formules-de-derivees">Formules de dérivées</h3>
+<div class="admonition danger">
+<ul>
+<li><span class="arithmatex">\(f(x) = x^n\)</span></li>
+<li><span class="arithmatex">\(f'(x) = nx^{n-1}\)</span></li>
+<li><span class="arithmatex">\(g(x) = \frac{1}{x}\)</span></li>
+<li><span class="arithmatex">\(g'(x) = -x^{-2}\)</span></li>
+<li><span class="arithmatex">\(h(x) = a + b\)</span></li>
+<li><span class="arithmatex">\(h'(x) = a' + b'\)</span></li>
+<li><span class="arithmatex">\(m(x) = a * b\)</span></li>
+<li><span class="arithmatex">\(m'(x) = a'b + b'a\)</span></li>
+<li><span class="arithmatex">\(n(x) =\frac{a}{b}\)</span></li>
+<li><span class="arithmatex">\(n'(x) = \frac{a'b - b'a}{b^2}\)</span></li>
+<li><span class="arithmatex">\(l(x) = (g \circ f)\)</span></li>
+<li><span class="arithmatex">\(l'(x) =f'(g) \times g'\)</span></li>
+</ul>
+</div>
+<h2 id="exemple-1-formule-1">Exemple 1 : Formule 1</h2>
+<p><span class="arithmatex">\(v = 50 m/s\)</span></p>
+<p><span class="arithmatex">\(50m * 3600 = 5*36 km = 180 km/h\)</span></p>
+<p><span class="arithmatex">\(1000m \rightarrow 20s\)</span></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>0</th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+<th>5</th>
+<th>6</th>
+<th>7</th>
+<th>8</th>
+<th>9</th>
+<th>10</th>
+<th>11</th>
+<th>12</th>
+<th>13</th>
+<th>14</th>
+<th>15</th>
+<th>16</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>v</strong></td>
+<td>50</td>
+<td>52</td>
+<td>54</td>
+<td>56</td>
+<td>58</td>
+<td>60</td>
+<td>62</td>
+<td>64</td>
+<td>66</td>
+<td>68</td>
+<td>70</td>
+<td>72</td>
+<td>70</td>
+<td>68</td>
+<td>66</td>
+<td>64</td>
+<td>62</td>
+</tr>
+<tr>
+<td><strong>Distance parcourue</strong></td>
+<td>0</td>
+<td>50</td>
+<td>102</td>
+<td>156</td>
+<td>212</td>
+<td>270</td>
+<td>330</td>
+<td>392</td>
+<td>456</td>
+<td>522</td>
+<td>590</td>
+<td>660</td>
+<td>732</td>
+<td>802</td>
+<td>870</td>
+<td>946</td>
+<td>1010</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>continuer à accélérer. <span class="arithmatex">\(\times\)</span></li>
+<li>moins accélérer. <span class="arithmatex">\(\times\)</span></li>
+<li>ralentir : <span class="arithmatex">\(2m/s/s\)</span> <span class="arithmatex">\(\times\)</span></li>
+<li>freiner : <span class="arithmatex">\(4m/s/s\)</span> Aïe</li>
+<li>freiner à fond : <span class="arithmatex">\(8m/s/s\)</span></li>
+</ul>
+<h2 id="tp">TP</h2>
+<ul>
+<li>
+<p>Ecrire un programme qui permet d'afficher, seconde après seconde, vitesse et distance parcourue en fonction d'une accélération donnée.</p>
+</li>
+<li>
+<p>Utiliser ces fonctions pour déterminer la décélération la meilleure.</p>
+</li>
+</ul>
+<div class="admonition info">
+<p>Pour ce faire, nous allons utiliser les structures suivantes :</p>
+<div class="highlight"><pre><span></span><code><span class="k">typedef</span><span class="w"> </span><span class="k">struct</span><span class="w"> </span><span class="nc">instant</span><span class="p">{</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">tps</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">float</span><span class="w"> </span><span class="n">acc</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">float</span><span class="w"> </span><span class="n">speed</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">float</span><span class="w"> </span><span class="n">dist</span><span class="p">;</span>
+<span class="p">}</span><span class="n">instant_t</span><span class="p">;</span>
+
+<span class="k">typedef</span><span class="w"> </span><span class="k">struct</span><span class="w"> </span><span class="nc">vect</span><span class="p">{</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">nbval</span><span class="p">;</span>
+<span class="w">    </span><span class="n">instant_t</span><span class="o">*</span><span class="w"> </span><span class="n">vec</span><span class="p">;</span>
+<span class="p">}</span><span class="n">vect_t</span>
+</code></pre></div>
+</div>
+<h3 id="utilite-de-la-derivee">Utilité de la dérivée</h3>
+<ul>
+<li><span class="arithmatex">\(diff(i) = u_{i+1} -u_i\)</span></li>
+<li><span class="arithmatex">\(\int u \Rightarrow \displaystyle\sum^n_{i=0} u_i\)</span></li>
+<li><span class="arithmatex">\((u v)' = u'v + uv'\)</span>
+utile pour connaitre la vitesse</li>
+<li><span class="arithmatex">\(f(x) = 0\)</span></li>
+<li><span class="arithmatex">\(f'(x_1) =0\)</span></li>
+<li><span class="arithmatex">\(f'(x_2) = 0\)</span></li>
+</ul>
+<h2 id="exemple-2">Exemple 2</h2>
+<ul>
+<li><span class="arithmatex">\(TM\)</span> = Temperature moyenne. <span class="arithmatex">\(\simeq 15\)</span>°C</li>
+<li><span class="arithmatex">\(TM(i)\)</span>  : pour l'année <span class="arithmatex">\(i\)</span>. <span class="arithmatex">\(\simeq 288\)</span>K</li>
+<li><span class="arithmatex">\(PPM\)</span> (parties par million) et <span class="arithmatex">\(GES\)</span> (gaz à effet de serre)</li>
+<li><span class="arithmatex">\(78\)</span>% Azote</li>
+<li><span class="arithmatex">\(21\)</span>% Oxygène</li>
+<li><span class="arithmatex">\(TM\)</span> dépend de <span class="arithmatex">\(PPM\)</span></li>
+</ul>
+<h4 id="petite-parenthese">Petite parenthèse</h4>
+<ul>
+<li>fontes des glaces  = <span class="arithmatex">\(\Rightarrow +43\)</span>K</li>
+<li>micro organique océanique <span class="arithmatex">\(\Rightarrow +40\)</span>K<blockquote>
+<p>"Everything's gonna be alright" (from <em>No woman no cry)</em></p>
+</blockquote>
+</li>
+</ul>
+<h5 id="exemple_1">Exemple</h5>
+<p>Exprimer <span class="arithmatex">\(TM(i) / TM(i+1)\)</span> en fonction de <span class="arithmatex">\(PPM(i)\)</span></p>
+<ul>
+<li><span class="arithmatex">\(PPM(1880) = 280\)</span></li>
+<li><span class="arithmatex">\(TM(1880) = 280\)</span> K</li>
+</ul>
+<p>donc</p>
+<ul>
+<li><span class="arithmatex">\(TM(i) = \alpha*PPM(i) + Cte\)</span></li>
+</ul>
+<p><span class="arithmatex">\(\alpha &lt;1\)</span></p>
+<p><span class="arithmatex">\(\alpha \simeq 10\)</span>%</p>
+<p><span class="arithmatex">\(TM(i) = Cte + \frac{10 \times ppm(i)}{100}\)</span></p>
+<p><span class="arithmatex">\(288 = Cte + \frac{10 \times 280}{100}\)</span></p>
+<p><span class="arithmatex">\(Cte = 288 - \frac{10 \times 280}{100}\)</span></p>
+<p><span class="arithmatex">\(Cte = 260\)</span></p>
+<ul>
+<li><span class="arithmatex">\(PPM(i+1) =PPM(i) + 3.5\)</span></li>
+</ul>
+<p><span class="arithmatex">\(TM(i+1) = TM(i)\)</span></p>
+<ul>
+<li>
+<p><span class="arithmatex">\(TM(i) = 260 + \frac{PPM(i)}{10}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(TM(i+1) = 260 + \frac{PPM(i+1)}{10}\)</span></p>
+</li>
+</ul>
+<p><span class="arithmatex">\(=260 + \frac{PPM(i) + 3.5}{10}\)</span></p>
+<p><span class="arithmatex">\(= 260 + \frac{PPM(i)}{10} + 0.35\)</span></p>
+<p><span class="arithmatex">\(= TM(i) + 0.35\)</span></p>
+<ul>
+<li>Dérivée sur <span class="arithmatex">\(\mathbb{R}\)</span> : <span class="arithmatex">\(TM'(x) = \frac{PPM'(x)}{10}\)</span></li>
+</ul>
+<h4 id="fortran">FORTRAN</h4>
+<ul>
+<li><span class="arithmatex">\(i\:j\:k\:l\:m\:n \rightarrow INT\)</span></li>
+<li><span class="arithmatex">\(x\:y\:z\:h\:t \rightarrow FLOAT\)</span></li>
+</ul>
+<h2 id="fonction-derivee-derivee-seconde">Fonction / dérivée / dérivée seconde</h2>
+<ul>
+<li><span class="arithmatex">\(f \rightarrow f' \rightarrow f''\)</span></li>
+</ul>
+<p><span class="arithmatex">\(distance \leftarrow vitesse \leftarrow\)</span></p>
+<h3 id="exemple-probleme-a-3-corps">Exemple : "Problème à 3 corps"</h3>
+<ul>
+<li>Pas de solution analytique mais mathématique</li>
+<li>trois objet physique qui gravite tout autour qui ont une masse et une vitesse</li>
+<li><span class="arithmatex">\(f(m_1,v_1,m_2...)\)</span></li>
+<li>algo de Runge Kutta 4</li>
+<li>
+<p><span class="arithmatex">\(temps = \alpha R^{3/2}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(Jupiter \simeq 40' \simeq \frac{2}{3} h \simeq \frac{2}{3 \times 24} j \frac{1}{36} j \simeq \frac{1}{10000} an \frac{1}{36 \times 365} an\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\sqrt{5000} = 10 \sqrt{50} \simeq 70 \Rightarrow 70 \times 5000 \times 80 \;ans \Rightarrow 28000000 \;ans\)</span></p>
+</li>
+</ul>
+<h2 id="dessiner-une-courbe-a-partir-dune-fonction">Dessiner une courbe à partir d'une fonction</h2>
+<ul>
+<li>Utiliser un 'plotteur' (outil permettant d'interpréter une fonction en graphe en latex)</li>
+</ul>
+<h2 id="fonction-exponentielle-et-logarithmique">Fonction exponentielle et logarithmique</h2>
+<h3 id="proprietes">Propriétés</h3>
+<div class="admonition warning">
+<p class="admonition-title">Formules de dérivées</p>
+<ul>
+<li><span class="arithmatex">\(f(x) = exp(x) = e^x\)</span></li>
+<li><span class="arithmatex">\(f'(x) = e^x\)</span></li>
+<li><span class="arithmatex">\(e^{log(x)} = log \; e^x = x\)</span></li>
+<li><span class="arithmatex">\(log(a \times b) = log(a) + log(b)\)</span></li>
+<li><span class="arithmatex">\(log(a^n) = n \; log(a)\)</span></li>
+<li><span class="arithmatex">\(ln_10(10^x) = x\)</span></li>
+<li><span class="arithmatex">\(ln_2(2^x) = x\)</span></li>
+<li><span class="arithmatex">\(cos' = -sin\)</span></li>
+<li><span class="arithmatex">\(sin' = cos\)</span></li>
+</ul>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Graphe <span class="arithmatex">\(exp(x)\)</span> et <span class="arithmatex">\(log(x)\)</span></p>
+<p><img alt="" src="https://pads.up8.edu/uploads/af1cdb73-0570-406f-b72d-7ea7edd53626.png" /></p>
+</div>
+<h2 id="exercice-sur-la-derivation">Exercice sur la dérivation</h2>
+<div class="admonition warning">
+<ul>
+<li><span class="arithmatex">\(f_1(x) = 4x^3 - 5x^2 + x - 1\)</span></li>
+</ul>
+</div>
+<details class="success">
+<summary>Correction</summary>
+<p><span class="arithmatex">\(f_1'(x) = 12x^2 - 10 x + 1\)</span></p>
+</details>
+<hr />
+<div class="admonition warning">
+<ul>
+<li><span class="arithmatex">\(f_2(x) = (x^2 + 1)(x^3 -2x)\)</span></li>
+</ul>
+</div>
+<details class="success">
+<summary>Correction</summary>
+<p><span class="arithmatex">\(f_2(x) = u \times v\)</span> avec</p>
+<ul>
+<li><span class="arithmatex">\(u =x^2 + 1\)</span></li>
+<li><span class="arithmatex">\(u' =2x\)</span></li>
+<li><span class="arithmatex">\(v = x^3 -2x\)</span></li>
+<li><span class="arithmatex">\(v' =3x^2 -2\)</span></li>
+</ul>
+<p>Donc</p>
+<p><span class="arithmatex">\(f_2'(x) = u'v + uv' = 2x(x^3 -2x) + (x^2 + 1)(3x^2 -2)\)</span></p>
+<p><span class="arithmatex">\(= 2x^4 -4x^2 + 3x^4-2x^2 + 3x^2 -2\)</span></p>
+<p><span class="arithmatex">\(= 5x^4 -3x^2 -2\)</span></p>
+</details>
+<hr />
+<div class="admonition warning">
+<ul>
+<li><span class="arithmatex">\(f_3(x) = \frac{2x^2 -3}{x^2 + 7}\)</span></li>
+</ul>
+</div>
+<details class="success">
+<summary>Correction</summary>
+<p><span class="arithmatex">\(f_3(x) = \frac{u}{v}\)</span> avec</p>
+<ul>
+<li><span class="arithmatex">\(u=2x^2 -3\)</span></li>
+<li><span class="arithmatex">\(u'=4x\)</span></li>
+<li><span class="arithmatex">\(v=x^2 + 7\)</span></li>
+<li><span class="arithmatex">\(v'=2x\)</span></li>
+</ul>
+<p>Donc</p>
+<p><span class="arithmatex">\(f_3'(x) = \frac{u'v - uv'}{v^2}=\frac{4x(x^2 +7) -(2x^2 -3) \times 2x}{(x^2+7)}\)</span></p>
+</details>
+<hr />
+<div class="admonition warning">
+<ul>
+<li><span class="arithmatex">\(f_4(x) = 5x^3 - \frac{1}{x} + 3 \sqrt{x}\)</span></li>
+</ul>
+</div>
+<details class="success">
+<summary>Correction</summary>
+<p><span class="arithmatex">\(f_4(x) =u +v+w\)</span> avec</p>
+<ul>
+<li><span class="arithmatex">\(u= 5x^3\)</span></li>
+<li><span class="arithmatex">\(u'=15x^2\)</span></li>
+<li><span class="arithmatex">\(v=\frac{1}{x}\)</span></li>
+<li><span class="arithmatex">\(v'=-\frac{1}{x^2}\)</span></li>
+<li><span class="arithmatex">\(w=r \times s\)</span> avec</li>
+<li><span class="arithmatex">\(r=3; r'=0;s=\sqrt{x};s'=\frac{1}{2 \sqrt{x}}\)</span></li>
+<li>donc <span class="arithmatex">\(w'=r's +rs' = 0 \times \sqrt{x} + 3 \times \frac{1}{2 \sqrt{x}} = \frac{3}{2 \sqrt{x}}\)</span></li>
+</ul>
+<p>Donc</p>
+<p><span class="arithmatex">\(f_4'(x) =u'+v'+w' =15x^2 - \frac{1}{x^2} + \frac{3}{2 \sqrt{x}}\)</span></p>
+</details>
+<hr />
+<div class="admonition warning">
+<ul>
+<li><span class="arithmatex">\(f_5(x) = \frac{1}{x+x^2}\)</span></li>
+</ul>
+</div>
+<details class="success">
+<summary>Correction</summary>
+<p><span class="arithmatex">\(f_5(x)=\frac{1}{u}\)</span> avec</p>
+<ul>
+<li><span class="arithmatex">\(u=x+x^2\)</span></li>
+</ul>
+<p>Donc</p>
+<p><span class="arithmatex">\(f_5'(x)=- \frac{1}{u^2} = - \frac{1}{(x+x^2)^2}\)</span></p>
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-circle-arrow-up" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m16 12-4-4-4 4M12 16V8"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://zensical.org/" target="_blank" rel="noopener">
+      Zensical
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      
+      <script id="__config" type="application/json">{"annotate":null,"base":"../../..","features":["navigation.tabs","navigation.top","search.highlight","search.suggest","content.code.copy"],"search":"../../../assets/javascripts/workers/search.e2d2d235.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.5fd3284f.min.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

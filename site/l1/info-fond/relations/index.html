@@ -1,0 +1,1093 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="https://mcl.pages.dev/images/favicon.png">
+      <meta name="generator" content="zensical-0.0.27">
+    
+    
+      
+        <title>Relations - Michel Dong</title>
+      
+    
+    
+      
+        
+      
+      <link rel="stylesheet" href="../../../assets/stylesheets/modern/main.50057488.min.css">
+      
+        
+          
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/modern/palette.dfe2e883.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,500,500i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,a=__md_scope)=>JSON.parse(t.getItem(a.pathname+"."+e)),__md_set=(e,t,a=localStorage,_=__md_scope)=>{try{a.setItem(_.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer" aria-label="Navigation"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#relations" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Michel Dong" class="md-header__button md-logo" aria-label="Michel Dong" data-md-component="logo">
+      
+  <img src="https://mcl.pages.dev/images/favicon.png" alt="Michel Dong">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer" aria-label="Navigation">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-menu" viewBox="0 0 24 24"><path d="M4 5h16M4 12h16M4 19h16"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Michel Dong
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Relations
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="none" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="none" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search" aria-label="Search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-search" viewBox="0 0 24 24"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog" aria-label="Search">
+  <button type="button" class="md-search__button">
+    Search
+  </button>
+</div>
+      
+    
+    <div class="md-header__source">
+      
+    </div>
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  Accueil
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../" class="md-tabs__link">
+        
+  
+  L1
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../l2/" class="md-tabs__link">
+        
+  
+  L2
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="https://mdong.up8.site/" class="md-tabs__link">
+        
+  
+  À propos
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Michel Dong" class="md-nav__button md-logo" aria-label="Michel Dong" data-md-component="logo">
+      
+  <img src="https://mcl.pages.dev/images/favicon.png" alt="Michel Dong">
+
+    </a>
+    Michel Dong
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Accueil
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    L1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../l2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    L2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://mdong.up8.site/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    À propos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#exemples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exemples
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#proprietes-et-categories" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Propriétés et catégories
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Propriétés et catégories">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reflexivite" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reflexivité:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#irreflexivite" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Irreflexivité:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#symetrie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Symétrie:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#antisymetrie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Antisymétrie:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transitivite" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Transitivité:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#relation-dequivalence-symbole-equiv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Relation d'équivalence (symbole : \(\equiv\))
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Relation d&#x27;équivalence (symbole : \(\equiv\))">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exemple" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exemple
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ecriture-de-partition-dun-ensemble" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Écriture de partition d'un ensemble
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#relations-dordre-large" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Relations d'ordre Large
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Relations d&#x27;ordre Large">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exemple_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exemple
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#relation-dordre-stricte" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Relation d'ordre Stricte
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Relation d&#x27;ordre Stricte">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exemple_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exemple
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#relation-dordre-total" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Relation d'ordre Total
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Relation d&#x27;ordre Total">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exemple_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exemple
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#relation-dordre-partiel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Relation d'ordre Partiel
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Relation d&#x27;ordre Partiel">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exemple_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exemple
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#majorant" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Majorant
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Majorant">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exemple_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exemple
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#maximal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Maximal
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Maximal">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exemple_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exemple
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#minorant" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Minorant
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#minimal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Minimal
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Minimal">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exemple_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exemple
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#successeur-immediat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Successeur Immédiat
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Successeur Immédiat">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exemple_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exemple
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#decrire-les-relations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Décrire les relations
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Décrire les relations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#description-graphique-dun-ensemble" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Description graphique d'un ensemble
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#description-graphique-dune-relation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Description graphique d'une relation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercice" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercice
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+<h1 id="relations">Relations</h1>
+<div class="admonition info">
+<p class="admonition-title">Définition</p>
+<p>L'objectif est de créer des ensembles de tuple où les valeurs ont un lien logique (exemple : déduire l'une de l'autre avec un calcul)</p>
+<p>Soit <span class="arithmatex">\(A,B\)</span> deux ensembles.</p>
+<p><span class="arithmatex">\(R \ \{(x,y); x \in A \wedge y \in B\}\)</span></p>
+</div>
+<h5 id="exemples">Exemples</h5>
+<ul>
+<li><span class="arithmatex">\(A = \{a,b,c,d\}\)</span></li>
+<li><span class="arithmatex">\(B = \{1,2,3\}\)</span></li>
+<li><span class="arithmatex">\(R = \{(a, 1), (b, 1), (c, 1), (d, 1), (b, 2), (c,3) \}\)</span></li>
+<li><span class="arithmatex">\((a,b) \in R\)</span> s'écrit  <span class="arithmatex">\(aRb\)</span></li>
+</ul>
+<p>Relations internes <span class="arithmatex">\((A==B)\)</span>
+<span class="arithmatex">\(\mathbb{N} \mathbb{N} : R = \{(a,b) ; a \in \mathbb{N} \wedge b \in \mathbb{N} \wedge a == b * b\}\)</span>
+<span class="arithmatex">\(\Rightarrow \{(0,0),(1,1),(4,2),(9,3),(16,4)\}\)</span></p>
+<hr />
+<h3 id="proprietes-et-categories">Propriétés et catégories</h3>
+<div class="admonition danger">
+<p class="admonition-title">Propriétés</p>
+<ul>
+<li>
+<h4 id="reflexivite">Reflexivité:</h4>
+<p><span class="arithmatex">\(\forall a ; aRa\)</span></p>
+</li>
+<li>
+<h4 id="irreflexivite">Irreflexivité:</h4>
+<p><span class="arithmatex">\(\forall a ; \overline{aRa}\)</span></p>
+</li>
+<li>
+<h4 id="symetrie">Symétrie:</h4>
+<p><span class="arithmatex">\(\forall a, b ; aRb \Rightarrow bRa\)</span></p>
+</li>
+<li>
+<h4 id="antisymetrie">Antisymétrie:</h4>
+<p><span class="arithmatex">\(\forall a,b ; ((aRb) \wedge (bRa)) \Rightarrow a == b\)</span></p>
+<p>signifie que la seule façon d'avoir de la symétrie c'est que les 2 valeurs soit égales</p>
+</li>
+<li>
+<h4 id="transitivite">Transitivité:</h4>
+<p><span class="arithmatex">\(\forall a,b,c ;aRb \wedge bRc \Rightarrow a Rc\)</span></p>
+</li>
+</ul>
+</div>
+<hr />
+<h3 id="relation-dequivalence-symbole-equiv">Relation d'équivalence (symbole : <span class="arithmatex">\(\equiv\)</span>)</h3>
+<div class="admonition info">
+<p class="admonition-title">Relation à la fois :</p>
+<ul>
+<li>Réflexive</li>
+<li>Symétrique</li>
+<li>Transitive</li>
+</ul>
+</div>
+<h5 id="exemple">Exemple</h5>
+<ul>
+<li><span class="arithmatex">\(aRb \iff a==b\)</span></li>
+</ul>
+<h4 id="ecriture-de-partition-dun-ensemble">Écriture de partition d'un ensemble</h4>
+<p>une partition de <span class="arithmatex">\(\mathbb{N}\)</span> en <span class="arithmatex">\(a\)</span> sous-ensembles se note <span class="arithmatex">\(\frac{\mathbb{N}}{a\mathbb{N}}\)</span></p>
+<hr />
+<h3 id="relations-dordre-large">Relations d'ordre Large</h3>
+<div class="admonition info">
+<p class="admonition-title">Relation à la fois :</p>
+<ul>
+<li>Réflexive</li>
+<li>Antisymétrique</li>
+<li>Transitive</li>
+</ul>
+</div>
+<h5 id="exemple_1">Exemple</h5>
+<p>La relation "<span class="arithmatex">\(\leq\)</span>" est d'ordre large.</p>
+<hr />
+<h3 id="relation-dordre-stricte">Relation d'ordre Stricte</h3>
+<div class="admonition info">
+<p class="admonition-title">Relation à la fois :</p>
+<ul>
+<li>Irréflexive</li>
+<li>Transitive</li>
+</ul>
+</div>
+<h5 id="exemple_2">Exemple</h5>
+<ul>
+<li>La relation "<span class="arithmatex">\(&lt;\)</span>" est d'ordre stricte.</li>
+</ul>
+<hr />
+<h3 id="relation-dordre-total">Relation d'ordre Total</h3>
+<div class="admonition info">
+<p class="admonition-title">Définition</p>
+<p>Relation qui relis toutes les valeurs dans un sens OU (logique) dans un autre.</p>
+<ul>
+<li><span class="arithmatex">\(\forall a,b; (aRb) \vee (bRa) \vee a == b\)</span></li>
+</ul>
+<p>Autrement dit, tous les éléments sont comparables.</p>
+</div>
+<h5 id="exemple_3">Exemple</h5>
+<ul>
+<li>
+<p><span class="arithmatex">\(\leq\)</span></p>
+<p>car <span class="arithmatex">\(\forall a,b \in \mathbb{R},a \leq b \vee b \leq a\)</span></p>
+</li>
+</ul>
+<h3 id="relation-dordre-partiel">Relation d'ordre Partiel</h3>
+<div class="admonition info">
+<p class="admonition-title">Définition</p>
+<p>Relation d'ordre qui n'est pas total.</p>
+<p>Tous les éléments ne sont pas comparables.</p>
+</div>
+<h5 id="exemple_4">Exemple</h5>
+<ul>
+<li>
+<p><span class="arithmatex">\(\subseteq\)</span></p>
+<p>Soit <span class="arithmatex">\(E\)</span> un ensemble. Pour deux sous-ensembles quelconque <span class="arithmatex">\(A\)</span> et <span class="arithmatex">\(B\)</span> de <span class="arithmatex">\(E\)</span>, <span class="arithmatex">\(A \subseteq B \vee B \subseteq A\)</span> n'est pas toujours vrai.</p>
+</li>
+</ul>
+<h2 id="majorant">Majorant</h2>
+<div class="admonition info">
+<p class="admonition-title">Définition</p>
+<p><span class="arithmatex">\((E,\leq)\)</span><code>//(relation d'ordre large)</code></p>
+<p><span class="arithmatex">\(P \subset E \wedge m \in E\)</span></p>
+<p><span class="arithmatex">\(m\)</span> majorant de <span class="arithmatex">\(P\)</span> si et seulement si:</p>
+<p><span class="arithmatex">\(\forall x \in P; (x &lt; m) \vee (x == m)\)</span></p>
+</div>
+<h5 id="exemple_5">Exemple</h5>
+<ul>
+<li>4 est le majorant de l'ensemble <span class="arithmatex">\(\{x \in \mathbb{N}; x^2 &lt; 20\}\)</span></li>
+<li><span class="arithmatex">\(\{ x \in \mathbb{N} ; x \in \mathbb{P}\}\)</span> n'a pas de majorant (avec <span class="arithmatex">\(\mathbb{P}\)</span> l'ensemble des nombres premiers)</li>
+</ul>
+<h2 id="maximal">Maximal</h2>
+<div class="admonition info">
+<p class="admonition-title">Définition</p>
+<p><span class="arithmatex">\((E, &lt;)\)</span> <code>//(ordre stricte)</code></p>
+<p><span class="arithmatex">\(m \in E\)</span> est maximal si et seulement si </p>
+<p><span class="arithmatex">\(\forall x \in E ; ¬(m &lt; x) \vee (x==m)\)</span></p>
+<p>(Un élément <span class="arithmatex">\(m\)</span> est le maximal d'un ensemble <span class="arithmatex">\(E\)</span> si et seulement si il est plus grand ou égal à tout les éléments <span class="arithmatex">\(x\)</span> de <span class="arithmatex">\(E\)</span>)</p>
+</div>
+<h5 id="exemple_6">Exemple</h5>
+<ul>
+<li>
+<p><span class="arithmatex">\(0\)</span> est le maximal de <span class="arithmatex">\(\mathbb{Z}⁻\)</span></p>
+<p>avec <span class="arithmatex">\(\mathbb{Z}⁻\)</span> l'ensemble des nombres entiers négatifs.</p>
+</li>
+</ul>
+<h2 id="minorant">Minorant</h2>
+<h2 id="minimal">Minimal</h2>
+<div class="admonition info">
+<p class="admonition-title">Définition</p>
+<p>Un élément <span class="arithmatex">\(m\)</span> est le minimal d'un ensemble <span class="arithmatex">\(E\)</span> si et seulement si il est supérieur à tous les éléments de <span class="arithmatex">\(E\)</span> et qu'il appartient à <span class="arithmatex">\(E\)</span>.</p>
+</div>
+<h5 id="exemple_7">Exemple</h5>
+<ul>
+<li><span class="arithmatex">\(0\)</span> est le minimal de <span class="arithmatex">\(\mathbb{N}\)</span></li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Remarque</p>
+<p>Il peut y avoir plusieurs majorants ou minorants dans un ensemble, mais un seul minimal ou maximal.</p>
+</div>
+<h2 id="successeur-immediat">Successeur Immédiat</h2>
+<div class="admonition info">
+<p class="admonition-title">Définition</p>
+<p><span class="arithmatex">\(y\)</span> succésseur immédiat de <span class="arithmatex">\(x\)</span> si et seulement si</p>
+<p><span class="arithmatex">\(x \leq y \wedge y \neq x \wedge ¬(\exists z; x \leq z \wedge z \leq y)\)</span></p>
+</div>
+<h5 id="exemple_8">Exemple</h5>
+<p><span class="arithmatex">\(3\)</span> est un succésseur immédiat de <span class="arithmatex">\(2\)</span> dans <span class="arithmatex">\(\mathbb{N}\)</span></p>
+<h2 id="decrire-les-relations">Décrire les relations</h2>
+<h3 id="description-graphique-dun-ensemble">Description graphique d'un ensemble</h3>
+<p><img alt="description graphique" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.yGJTSw7Pz0BUp4yZ7RgBygHaCX%26pid%3DApi&amp;f=1&amp;ipt=2bd554686b6c808cd347d21d8959ab8dd940e9ea47b76ce6ac80034ea00de2e5&amp;ipo=images" /></p>
+<h3 id="description-graphique-dune-relation">Description graphique d'une relation</h3>
+<p><img alt="relation" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.FJqasN03Wg4FThmoXfXSkwHaER%26pid%3DApi&amp;f=1&amp;ipt=50ca39d6b5b36cee0056f18e913d00fdc4315b0bc3bb5c49c1cd637276e077f3&amp;ipo=images" /></p>
+<p><img alt="autre exemple" src="https://pads.up8.edu/uploads/e8d6319f-2afc-47e1-aea3-80b728437386.png" /></p>
+<h2 id="exercice">Exercice</h2>
+<p>Soit <span class="arithmatex">\(R\)</span> la relation définit sur <span class="arithmatex">\(\mathbb{R}\)</span> par :</p>
+<p><span class="arithmatex">\(xRy \iff x^2 = y^2\)</span></p>
+<ul>
+<li>Montrer que <span class="arithmatex">\(R\)</span> est une relation d'équivalence.</li>
+</ul>
+<details class="success">
+<summary>Réponse</summary>
+<p><span class="arithmatex">\(R\)</span> est :</p>
+<ol>
+<li><strong>Réflexive</strong> : <span class="arithmatex">\(\forall x \in \mathbb{R}, x^2 = x^2\)</span> donc <span class="arithmatex">\(xRx\)</span></li>
+<li><strong>Symétrique</strong> : <span class="arithmatex">\(xRy \iff x^2 = y^2 \iff y^2 = x^2\)</span> donc <span class="arithmatex">\(yRx\)</span></li>
+<li>
+<p><strong>Transive</strong> :</p>
+<p><span class="arithmatex">\(xRy \wedge yRx \iff x^2 = y^2 \wedge y^2 = z^2 \iff x^2 = y^2 = z^2\)</span> donc <span class="arithmatex">\(xRz\)</span></p>
+</li>
+</ol>
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-circle-arrow-up" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m16 12-4-4-4 4M12 16V8"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://zensical.org/" target="_blank" rel="noopener">
+      Zensical
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      
+      <script id="__config" type="application/json">{"annotate":null,"base":"../../..","features":["navigation.tabs","navigation.top","search.highlight","search.suggest","content.code.copy"],"search":"../../../assets/javascripts/workers/search.e2d2d235.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.5fd3284f.min.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
