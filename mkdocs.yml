@@ -8,7 +8,6 @@ theme:
     - search.suggest
     - content.code.copy
   language: en
-  dark_mode: true  # Activer le mode sombre par défaut
   logo: https://mcl.pages.dev/images/favicon.png
   favicon: https://mcl.pages.dev/images/favicon.png
 
