@@ -53,4 +53,18 @@
 [**Méthode et attribut de classe**](poo/chapitre17.html)
 { .card }
 
+[**18**](poo/chapitre18.html)
+{ .card }
+
+[**19**](poo/chapitre19.html)
+{ .card }
+
+[**20**](poo/chapitre20.html)
+{ .card }
+
+[**21**](poo/chapitre21.html)
+{ .card }
+
+[**22**](poo/chapitre22.html)
+{ .card }
 </div>
