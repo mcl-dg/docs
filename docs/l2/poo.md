@@ -53,18 +53,18 @@
 [**Méthode et attribut de classe**](poo/chapitre17.html)
 { .card }
 
-[**18**](poo/chapitre18.html)
+[**Espace de nom et référence r-value**](poo/chapitre18.html)
 { .card }
 
-[**19**](poo/chapitre19.html)
+[**Héritages 1**](poo/chapitre19.html)
 { .card }
 
-[**20**](poo/chapitre20.html)
+[**Déplacement**](poo/chapitre20.html)
 { .card }
 
-[**21**](poo/chapitre21.html)
+[**Heritages 2**](poo/chapitre21.html)
 { .card }
 
-[**22**](poo/chapitre22.html)
+[**Polymorphisme**](poo/chapitre22.html)
 { .card }
 </div>
