@@ -67,4 +67,7 @@
 
 [**Polymorphisme**](poo/chapitre22.html)
 { .card }
+
+[**Patron de fonction, de classe, (template)**](poo/chapitre23.html)
+{ .card }
 </div>
