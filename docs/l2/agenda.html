@@ -209,6 +209,8 @@
 .callout-info:hover { background-color: rgba(139, 233, 253, 0.08); }
 .callout-tip { background-color: rgba(80, 250, 123, 0.05); border-color: rgba(80, 250, 123, 0.2) rgba(80, 250, 123, 0.2) rgba(80, 250, 123, 0.2) rgb(80, 250, 123); }
 .callout-tip:hover { background-color: rgba(80, 250, 123, 0.08); }
+.prose .countdown-timer { display: inline-block; background-color: var(--code-bg); color: var(--accent-color); padding: 0.1em 0.6em; border-radius: 20px; font-weight: 600; font-size: 0.9em; border: 1px solid var(--accent-color); box-shadow: rgba(192, 132, 252, 0.2) 0px 0px 8px; vertical-align: middle; }
+.prose .countdown-timer.expired { background-color: rgba(255, 85, 85, 0.1); color: rgb(255, 85, 85); border-color: rgb(255, 85, 85); box-shadow: none; }
 
 
         /* --- ADAPTATION MOBILE UNIQUEMENT --- */
@@ -311,11 +313,6 @@
 <li><strong>Evaluation :</strong> Projet + TP</li>
 </ul>
 
-        </div><div class="callout callout-warning">
-            <ul>
-<li><code>02/04</code> : <strong>TP7</strong> (chat, morpion)</li>
-</ul>
-
         </div><p>&nbsp;</p>
 
 <hr>
@@ -328,9 +325,9 @@
 
         </div><div class="callout callout-warning">
             <ul>
-<li><code>14/04</code> à 12h : <strong>DST</strong> en B106</li>
-<li><code>26/04</code> : <strong>Projet</strong></li>
-<li><code>28/04</code> <code>29/04</code> <code>30/04</code> : <strong>Soutenance</strong></li>
+<li><code>14/04</code> à 12h : <strong>DST</strong> en B106 <span class="countdown-timer" data-target="14.04.2026.12">1 week, 2 days, 17 hours</span></li>
+<li><code>26/04</code> : <strong>Projet</strong> <span class="countdown-timer" data-target="26.04.2026">3 weeks, 5 hours</span></li>
+<li><code>28/04</code> <code>29/04</code> <code>30/04</code> : <strong>Soutenance</strong> <span class="countdown-timer" data-target="28.04.2026">3 weeks, 2 days, 5 hours</span></li>
 </ul>
 
         </div><p>&nbsp;</p>
@@ -345,12 +342,14 @@
 
         </div><div class="callout callout-warning">
             <ul>
-<li><code>06/04</code> à 23h59 : <strong>TP7</strong></li>
+<li><code>06/04</code> à 23h59 : <strong>TP7</strong> <span class="countdown-timer" data-target="06.04.2026.23.59">2 days, 5 hours, 37 min</span></li>
+<li><code>13/04</code> à 23h59 : <strong>TP8</strong> <span class="countdown-timer" data-target="13.04.2026.23.59">1 week, 2 days, 5 hours</span></li>
+<li><code>20/04</code> à 23h59 : <strong>TP9</strong> <span class="countdown-timer" data-target="20.04.2026.23.59">2 weeks, 2 days, 5 hours</span></li>
 </ul>
 
         </div><div class="callout callout-danger">
             <ul>
-<li><code>15/04</code> de 9h à 12h : <strong>DST2</strong> ?</li>
+<li><code>15/04</code> de 9h00 à 11h10 : <strong>DST2</strong> <span class="countdown-timer" data-target="15.04.2026.09">1 week, 3 days, 14 hours</span></li>
 </ul>
 
         </div><p>&nbsp;</p>
@@ -384,14 +383,14 @@ M834 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlist
 
         </div><div class="callout callout-warning">
             <ul>
-<li><code>07/04</code> : <strong>Devoir 5</strong></li>
-<li><code>08/04</code> : <strong>TP Noté</strong></li>
-<li><code>15/04</code> : <strong>Prof absent</strong></li>
+<li><code>07/04</code> : <strong>Devoir 5</strong> <span class="countdown-timer" data-target="07.04.2026">2 days, 5 hours, 38 min</span></li>
+<li><code>08/04</code> : <strong>TP Noté</strong> <span class="countdown-timer" data-target="08.04.2026">3 days, 5 hours, 38 min</span></li>
+<li><code>15/04</code> : <strong>Prof absent</strong> <span class="countdown-timer" data-target="15.04.2026">1 week, 3 days, 5 hours</span></li>
 </ul>
 
         </div><div class="callout callout-danger">
             <ul>
-<li><code>29/04</code> : <strong>DST</strong></li>
+<li><code>29/04</code> : <strong>DST</strong> <span class="countdown-timer" data-target="29.04.2026">3 weeks, 3 days, 5 hours</span></li>
 </ul>
 
         </div><p>&nbsp;</p>
@@ -407,7 +406,8 @@ M834 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlist
 
         </div><div class="callout callout-danger">
             <ul>
-<li><code>30/04</code> : <strong>Démo</strong></li>
+<li><code>30/04</code> à 23h59 : <strong>Démo</strong> <span class="countdown-timer" data-target="30.04.2026.23.59">3 weeks, 5 days, 5 hours</span></li>
+<li><code>13/06</code> : <strong>API8</strong> <span class="countdown-timer" data-target="13.06.2026">9 weeks, 6 days, 5 hours</span></li>
 </ul>
 
         </div></div>
@@ -454,6 +454,47 @@ M834 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlist
                 applyTheme(e.matches ? "dark" : "light");
             }
         });
+
+        function liveCountdowns() {
+            const timers = document.querySelectorAll('.countdown-timer');
+            const now = new Date();
+            timers.forEach(timer => {
+                const parts = timer.getAttribute('data-target').split('.');
+                if (parts.length < 3) return;
+                
+                const day = parseInt(parts[0], 10);
+                const month = parseInt(parts[1], 10) - 1;
+                const year = parseInt(parts[2], 10);
+                const hours = parts[3] ? parseInt(parts[3], 10) : 0;
+                const minutes = parts[4] ? parseInt(parts[4], 10) : 0;
+                
+                const targetDate = new Date(year, month, day, hours, minutes);
+                const diff = targetDate - now;
+                
+                if (diff <= 0) { 
+                    timer.textContent = "Time's up!"; // Modifié en anglais
+                    timer.classList.add('expired');
+                    return; 
+                }
+                
+                const days = Math.floor(diff / 86400000);
+                const hrs = Math.floor((diff / 3600000) % 24);
+                const mins = Math.floor((diff / 60000) % 60);
+                const w = Math.floor(days / 7);
+                const d = days % 7;
+                
+                let arr = [];
+                // Textes traduits en anglais
+                if(w>0) arr.push(w+" week"+(w>1?"s":""));
+                if(d>0) arr.push(d+" day"+(d>1?"s":""));
+                if(hrs>0) arr.push(hrs+" hour"+(hrs>1?"s":""));
+                if(w===0 && mins>0) arr.push(mins+" min");
+                
+                timer.textContent = arr.join(', ') || "< 1 minute";
+            });
+        }
+        setInterval(liveCountdowns, 1000);
+        liveCountdowns();
     </script>
 </body>
 </html>
